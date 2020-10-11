@@ -11,9 +11,9 @@ defmodule TwelveDays do
   """
   @spec verse(number :: integer) :: String.t()
   def verse(number) do
-    {nth, present} = @presents[number]
-    "On the #{nth} day of Christmas my true love gave to me: "
-    <> (number..1 |> Enum.map(fn x -> {_nth, present} = @presents[x] end))
+    #{nth, present} = @presents[number]
+    #"On the #{nth} day of Christmas my true love gave to me: "
+   # <> (number..1 |> Enum.map(fn x -> {_nth, present} = @presents[x] end))
   end
 
   @doc """
